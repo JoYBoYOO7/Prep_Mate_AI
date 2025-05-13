@@ -8,10 +8,9 @@ const monsSans = Mona_Sans({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "PrepMate",
-  description: "Mockup for interview powered by AI",
+  description: " AI-powered platform for mock interview preparation",
 };
 
 export default function RootLayout({
@@ -22,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${monsSans.className} antialiased pattern`}
-      >
+        className={`${monsSans.className} antialiased pattern`}>
         {children}
+
         <Toaster/>
       </body>
     </html>
