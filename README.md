@@ -4,8 +4,6 @@
 **PrepMate**: A job interview preparation platform powered by Vapi AI Voice agents  
 [Live Demo](https://prep-mate-ai-steel.vercel.app/) · Built by [Vansh Yadav](https://github.com/JoYBoYOO7)
 
-Build this project step-by-step with our detailed tutorial on JavaScript Mastery YouTube. Join the JSM family!
-
 ---
 
 ## 📋 Table of Contents
@@ -26,8 +24,6 @@ Build this project step-by-step with our detailed tutorial on JavaScript Mastery
 **PrepMate** is a modern web application designed to simulate job interviews using AI voice agents. Built with **Next.js**, **Firebase**, **Tailwind CSS**, and **Vapi AI**, it provides users with an immersive interview experience powered by **Google Gemini**.
 
 Whether you're learning how to integrate AI in web apps or practicing for a job, PrepMate helps you build and prepare effectively.
-
-Join our active Discord community (50k+ members) if you need help or want to share your progress.
 
 ---
 
@@ -70,6 +66,7 @@ Make sure you have:
 ```bash
 git clone https://github.com/JoYBoYOO7/Prep_Mate_AI.git
 cd Prep_Mate_AI
+
 
 Install Dependencies
 
@@ -122,22 +119,6 @@ Here are a few useful snippets from the project:
 🔗 Assets
 
 Public assets (images, icons, etc.) used in this project are stored in the public/ folder.
-
-⸻
-
-🚀 More
-
-Advance your skills with our Next.js Pro Course
-
-Loved this project? Dive into our pro content and build even more complex apps with confidence.
-
-⸻
-
-🚨 Tutorial
-
-This repository was built while following an in-depth video tutorial on the JavaScript Mastery YouTube channel.
-
-If you’re a visual learner, this step-by-step guide is perfect to help you understand full-stack development using AI tools.
 
 ⸻
 
