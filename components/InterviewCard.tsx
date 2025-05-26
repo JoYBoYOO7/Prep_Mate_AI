@@ -2,9 +2,10 @@ import { getRandomInterviewCover } from "@/lib/utils";
 import dayjs from "dayjs";
 import Image from "next/image";
 
-import DisplayTechicons from "./DisplayTechicons";
+
 import { getFeedbackByInterviewId } from "@/lib/actions/generate.action";
 import CheckFeedbackInterviewButton from "./CheckFeedbackInterviewButton";
+import DisplayTechicons from "./DisplayTechicons";
 
 const InterviewCard =  async ({ id, userId, role, type, techstack, createdAt}: InterviewCardProps) =>  {
   const feedback = userId && id ? await getFeedbackByInterviewId({interviewId : id, userId}) : null;
