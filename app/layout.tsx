@@ -3,14 +3,17 @@ import { Mona_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
-const monsSans = Mona_Sans({
+const monaSans = Mona_Sans({
   variable: "--font-mona-sans",
   subsets: ["latin"],
+  //display: "swap", // ⬅️  improves font performance
 });
 
+
+
 export const metadata: Metadata = {
-  title: "PrepMate",
-  description: " AI-powered platform for mock interview preparation",
+  title: "PrepMate - Precision in Recruitment",
+  description: "PrepMate is an AI-driven interview platform with real-time voice integration and automated feedback, helping users prepare faster and smarter.",
 };
 
 export default function RootLayout({
@@ -21,10 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${monsSans.className} antialiased pattern`}>
+        className={`${monaSans.className} antialiased pattern`}
+      >
         {children}
-
-        <Toaster/>
+        <Toaster />
       </body>
     </html>
   );
