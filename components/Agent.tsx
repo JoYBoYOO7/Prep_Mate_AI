@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils';
 import { vapi } from '@/lib/vapi.sdk';
-
+import { createInterview } from '@/lib/actions/generate.action';
 
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
@@ -65,10 +65,18 @@ const Agent = ({userName, userId, type}: AgentProps) => {
     useEffect(() => {
       if(callStatus === CallStatus.FINISHED) {
         setIsRedirecting(true); // Trigger loader before navigation
-        router.push('/dashboard');
+        // Save the interview before redirecting
+        createInterview({
+          userId: userId ?? '',
+          type: type ?? 'general',
+          role: 'Software Engineer', // You might want to make this dynamic
+          techstack: ['JavaScript', 'React'] // You might want to make this dynamic
+        }).then(() => {
+          router.push('/dashboard');
+        });
       }
       
-    },[callStatus, router]); // ✅ include dependencies)
+    },[callStatus, router, userId, type]); // Added userId and type to dependencies
     
     const handleCall = async () => {
       setCallStatus(CallStatus.CONNECTING);

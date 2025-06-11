@@ -115,3 +115,23 @@ export async function createFeedback(params: CreateFeedbackParams) {
     const feedbackDoc = querySnapshot.docs[0];
     return { id: feedbackDoc.id, ...feedbackDoc.data() } as Feedback;
   }
+
+export async function createInterview(params: { userId: string; type: string; role: string; techstack: string[] }) {
+    try {
+        const interviewRef = db.collection('interviews').doc();
+        const interview = {
+            userId: params.userId,
+            type: params.type,
+            role: params.role,
+            techstack: params.techstack,
+            finalized: true,
+            createdAt: new Date().toISOString()
+        };
+        
+        await interviewRef.set(interview);
+        return { success: true, id: interviewRef.id };
+    } catch (error) {
+        console.error("Error creating interview:", error);
+        return { success: false };
+    }
+}
