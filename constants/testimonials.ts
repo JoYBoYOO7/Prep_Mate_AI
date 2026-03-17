@@ -7,7 +7,7 @@ export const testimonials = [
   },
   {
     quote:
-      "I was blown away by PrepMate accuracy in evaluating my speech and giving relevant suggestions. Hats off to abhi for building something so futuristic yet user-friendly.",
+      "I was blown away by PrepMate accuracy in evaluating my speech and giving relevant suggestions. Hats off to Vansh for building something so futuristic yet user-friendly.",
     name: "Himanshu Shekhar",
     title: "Final Year Student, VIT Vellore",
   },
